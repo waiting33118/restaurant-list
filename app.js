@@ -20,6 +20,17 @@ app.get('/restaurants/:id', (req, res) => {
 	res.render('show', { restaurant })
 })
 
+app.get('/search', (req, res) => {
+	const keyword = req.query.keyword.toLowerCase()
+	const restaurant = restaurantList.results.filter(
+		(item) =>
+			item.name.toLowerCase().includes(keyword) ||
+			item.category.includes(keyword)
+	)
+	console.log(restaurant)
+	res.render('home', { restaurant, keyword: req.query.keyword })
+})
+
 app.listen(port, hostname, () => {
 	console.log(`The Server is running on http://${hostname}:${port}`)
 })
