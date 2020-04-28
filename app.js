@@ -14,7 +14,10 @@ app.get('/', (req, res) => {
 })
 
 app.get('/restaurants/:id', (req, res) => {
-	res.render('show')
+	const restaurant = restaurantList.results.find(
+		(item) => item.id.toString() === req.params.id
+	)
+	res.render('show', { restaurant })
 })
 
 app.listen(port, hostname, () => {
