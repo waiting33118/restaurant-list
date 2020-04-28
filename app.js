@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 	res.render('home', { restaurant: restaurantList.results })
 })
 
-app.get('/show', (req, res) => {
+app.get('/restaurants/:id', (req, res) => {
 	res.render('show')
 })
 
