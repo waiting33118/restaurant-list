@@ -1,4 +1,4 @@
-#餐廳清單網站
+# 餐廳清單網站
 
 使用 Node.js + Express + Express-handlebars 所打造的餐廳清單網站
 
@@ -6,33 +6,33 @@
 
 ![專案畫面](/public/photos/webpage.png)
 
-##安裝&使用
+## 安裝&使用
 
-####下載專案
+#### 下載專案
 
 ```
 git clone https://github.com/waiting33118/restaurant-list.git
 ```
 
-####安裝 Package
+#### 安裝 Package
 
 ```
 npm install
 ```
 
-####使用 nodemon 啟動伺服器
+#### 使用 nodemon 啟動伺服器
 
 ```
 npm run dev
 ```
 
-####或正常啟動
+#### 或正常啟動
 
 ```
 npm start
 ```
 
-##環境建置
+## 環境建置
 
 - Node.js v12.16.2
 - Express V4.17.1 -
@@ -44,6 +44,6 @@ npm start
 - 使用者可以瀏覽各家餐廳資訊
 - 使用者可以利用**餐廳名稱**或**類別**查詢特定店家
 
-##Contributor
+## Contributor
 
 - [x] TonyChung
