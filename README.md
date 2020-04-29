@@ -34,8 +34,8 @@ npm start
 
 ## 環境建置
 
-- Node.js v12.16.2
-- Express V4.17.1 -
+- Node.js v12.16.2 -執行環境
+- Express V4.17.1 -框架
 - Express-handlebars V4.0.3 -模板引擎
 
 ## 使用者故事
