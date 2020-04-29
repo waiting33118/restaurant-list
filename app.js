@@ -27,7 +27,6 @@ app.get('/search', (req, res) => {
 			item.name.toLowerCase().includes(keyword) ||
 			item.category.includes(keyword)
 	)
-	console.log(restaurant)
 	res.render('home', { restaurant, keyword: req.query.keyword })
 })
 
